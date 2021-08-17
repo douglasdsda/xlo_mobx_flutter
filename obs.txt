@@ -1,0 +1,19 @@
+-- command instalar mobx
+
+flutter pub run build_runner watch
+
+----- pacotes mobex
+
+ 
+ mobx: ^2.0.2
+  flutter_mobx: ^2.0.2
+
+  dev:
+    build_runner: ^2.0.2
+    mobx_codegen: ^2.0.2
+
+
+    --- outros pacotes
+
+    - parse_server_sdk_flutter // servidor parse server
+    - brasil_fields: ^1.1.4 // formatter
