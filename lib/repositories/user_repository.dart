@@ -20,6 +20,30 @@ class UserRepository {
     }
   }
 
+  Future<User> loginWithEmail(dynamic email, dynamic password) async {
+    final parserUser = ParseUser(email, password, null);
+
+    final response = await parserUser.login();
+
+    if (response.success) {
+      return mapParseToUser(response.result);
+    } else
+      return Future.error(ParseErrors.getDescription(response.error!.code));
+  }
+
+  Future currentUser() async {
+    final parseUser = await ParseUser.currentUser();
+    if (parseUser != null) {
+      final response =
+          await ParseUser.getCurrentUserFromServer(parseUser.sessionToken);
+      if (response!.success) {
+        return mapParseToUser(response.result);
+      } else
+        parseUser.logout();
+    }
+    return null;
+  }
+
   User mapParseToUser(ParseUser parseUser) {
     return User(
       id: parseUser.objectId,
