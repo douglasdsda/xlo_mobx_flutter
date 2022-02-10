@@ -78,28 +78,29 @@ class LoginScreen extends StatelessWidget {
                           height: 16,
                         ),
                         Padding(
-                            padding: const EdgeInsets.only(left: 3, right: 4),
-                            child: Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Text(
-                                  'Senha',
-                                  style: TextStyle(
-                                      color: Colors.grey[800],
-                                      fontSize: 16,
-                                      fontWeight: FontWeight.w700),
-                                ),
-                                GestureDetector(
-                                    child: Text(
-                                      'Esqueceu sua senha?',
-                                      style: TextStyle(
-                                        decoration: TextDecoration.underline,
-                                        color: Colors.purple,
-                                      ),
+                          padding: const EdgeInsets.only(left: 3, right: 4),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Text(
+                                'Senha',
+                                style: TextStyle(
+                                    color: Colors.grey[800],
+                                    fontSize: 16,
+                                    fontWeight: FontWeight.w700),
+                              ),
+                              GestureDetector(
+                                  child: Text(
+                                    'Esqueceu sua senha?',
+                                    style: TextStyle(
+                                      decoration: TextDecoration.underline,
+                                      color: Colors.purple,
                                     ),
-                                    onTap: () {}),
-                              ],
-                            )),
+                                  ),
+                                  onTap: () {}),
+                            ],
+                          ),
+                        ),
                         SizedBox(
                           height: 10,
                         ),

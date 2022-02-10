@@ -17,3 +17,6 @@ flutter pub run build_runner watch
 
     - parse_server_sdk_flutter // servidor parse server
     - brasil_fields: ^1.1.4 // formatter
+    - image_picker: ^0.8.3+2 tirar foto
+    - image_cropper: ^1.4.1 recortar foto // precisa de colocar codigo nativo na pasta android
+    - dio // http client
