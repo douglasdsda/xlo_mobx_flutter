@@ -31,9 +31,9 @@ void setupLocators() {
 }
 
 Future<void> initializeParse() async {
-  await Parse().initialize('EyD0KNU9a4izKQt0AjnU8w7XaW6guicRgcmUXI0d',
-      'https://parseapi.back4app.com/',
-      clientKey: 'TejGBpKL9RqNUAmIXTTruvC8Gdxl4E9c4FMlVplJ',
+  await Parse().initialize(
+      'fds1232FDS!dsa11232pmGFDS41', 'https://parseapi.back4app.com/',
+      clientKey: 'p3gjhianmçdsi123&@Gefbnm12123',
       autoSendSessionId: true,
       debug: true);
 
